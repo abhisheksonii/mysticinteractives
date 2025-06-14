@@ -12,7 +12,7 @@ const HeroSection = () => {
       {/* Mythological Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/3476b042-2bc6-4167-8472-b79803ef5be4.png"
+          src="/lovable-uploads/logo.png"
           alt="Kalki Background"
           className="absolute inset-0 w-full h-full object-cover opacity-15 blur-sm"
         />

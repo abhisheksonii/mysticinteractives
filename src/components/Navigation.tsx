@@ -30,7 +30,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="w-10 h-10 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/2e12b4c2-e8c0-4d87-b355-01d84c029bc7.png" 
+                src="/lovable-uploads/logo.png" 
                 alt="Mystic Interactives Logo"
                 className="w-full h-full object-contain"
               />

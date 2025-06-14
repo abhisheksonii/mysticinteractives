@@ -52,6 +52,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="border-amber-500/50 text-amber-400 hover:bg-amber-500/10 hover:border-amber-400 px-8 py-4 text-lg backdrop-blur-sm transition-all duration-300"
+              onClick={() => window.open('https://drive.google.com/file/d/19Jzw32Z2xo_PS9RJbJPCrOmQ3LuQnV4E/view?usp=drivesdk', '_blank')}
             >
               Watch Studio Reel
             </Button>

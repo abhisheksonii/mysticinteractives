@@ -9,16 +9,27 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '/#home' },
     { name: 'Games', href: '/games' },
     { name: 'About', href: '/#about' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (href.startsWith('/#') && location.pathname !== '/') {
-      // If we're not on home page and clicking a section link, navigate to home first
-      window.location.href = href;
+    
+    if (href.startsWith('/#')) {
+      const sectionId = href.substring(2);
+      if (location.pathname !== '/') {
+        // If we're not on home page and clicking a section link, navigate to home first
+        window.location.href = href;
+      } else {
+        // If we're already on home page, scroll to section
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     }
   };
 
